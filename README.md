@@ -34,11 +34,12 @@ uv sync
 cp .env.example .env
 ```
 
-Edit `.env` and set your GCP project ID and region:
+Edit `.env` and set your values:
 
 ```
 GCP_PROJECT_ID=your-project-id
 GCP_REGION=your-region
+CLAUDE_MODEL=claude-sonnet-4@20250514
 ```
 
 ### Authenticate with GCP

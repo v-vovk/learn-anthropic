@@ -10,7 +10,7 @@ Course notebooks for "Claude with Google Vertex AI" (Anthropic Skilljar). Uses t
 
 - Python 3.13, managed via `uv`
 - Install dependencies: `uv sync`
-- Copy `.env.example` to `.env` and set `GCP_PROJECT_ID` and `GCP_REGION`
+- Copy `.env.example` to `.env` and set `GCP_PROJECT_ID`, `GCP_REGION`, and `CLAUDE_MODEL`
 - GCP auth must be configured (`gcloud auth application-default login`)
 
 ## Structure
@@ -20,6 +20,6 @@ Course notebooks for "Claude with Google Vertex AI" (Anthropic Skilljar). Uses t
 
 ## Conventions
 
-- Default model: `claude-sonnet-4@20250514`
+- Model is configured via `CLAUDE_MODEL` env var (default: `claude-sonnet-4@20250514`)
 - Notebooks follow the pattern: load env, create `AnthropicVertex` client, make API calls
 - Notebook numbering uses zero-padded three-digit prefixes matching course module order
