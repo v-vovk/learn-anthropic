@@ -24,12 +24,13 @@ def add_assistant_message(messages, text):
     messages.append({"role": "assistant", "content": text})
 
 
-def chat(client, model, messages, system=None, temperature=1.0):
+def chat(client, model, messages, system=None, temperature=1.0, stop_sequences=[]):
     parameters = {
         "model": model,
         "max_tokens": 1000,
         "messages": messages,
         "temperature": temperature,
+        "stop_sequences": stop_sequences,
     }
 
     if system:
