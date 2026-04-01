@@ -15,11 +15,14 @@ Course notebooks for "Claude with Google Vertex AI" (Anthropic Skilljar). Uses t
 
 ## Structure
 
-- `notebooks/` — Jupyter notebooks numbered sequentially (e.g., `001_requests.ipynb`)
+- `notebooks/` — organized by course module (e.g., `01_accessing_claude_api/`, `02_prompt_evaluation/`)
+- Each module subfolder contains numbered notebooks (e.g., `01_requests.ipynb`, `02_system_prompts.ipynb`)
+- `notebooks/utils.py` — shared utilities (client setup, chat helpers), imported via `sys.path.insert(0, "..")`
+- `notebooks/template.ipynb` — starter template for new notebooks
 - All notebooks use `AnthropicVertex` client from `anthropic[vertex]` SDK, authenticated via environment variables loaded with `python-dotenv`
 
 ## Conventions
 
 - Model is configured via `CLAUDE_MODEL` env var (default: `claude-sonnet-4@20250514`)
 - Notebooks follow the pattern: load env, create `AnthropicVertex` client, make API calls
-- Notebook numbering uses zero-padded three-digit prefixes matching course module order
+- Notebook numbering uses zero-padded two-digit prefixes, reset per module
