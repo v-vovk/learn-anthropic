@@ -1,0 +1,48 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "This randomized controlled trial examined the efficacy of cognitive behavioral therapy (CBT) interventions for treating generalized anxiety disorder in adolescents. Participants (N=156) were randomly assigned to either a 12-week CBT protocol or waitlist control condition. The CBT intervention incorporated cognitive restructuring techniques to address maladaptive thought patterns, behavioral activation strategies to increase engagement in valued activities, and exposure therapy protocols for anxiety-provoking situations. Statistical analyses employed mixed-effects modeling to account for nested data structure, with effect sizes calculated using Cohen's d for between-group comparisons. Results demonstrated significant improvements in anxiety symptoms as measured by the GAD-7 scale (p<0.001, d=0.82). The experimental design included baseline assessments, mid-treatment evaluations at week 6, and post-treatment follow-ups at 3-month intervals to examine treatment durability."
+    },
+    "solution_criteria": [
+      "Extracts topics as a JSON array of strings",
+      "Includes major psychological and methodological topics mentioned"
+    ],
+    "task_description": "\"\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a psychology study passage covering cognitive behavioral theories, statistical methodology, and experimental design"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The phenomenological approach to consciousness reveals fundamental tensions between subjective experience and objective scientific inquiry. Husserl's transcendental reduction brackets the natural attitude to examine pure consciousness, while Heidegger's existential analytic demonstrates that Dasein's being-in-the-world precedes any subject-object distinction. This ontological priority challenges traditional epistemological frameworks that assume a clear separation between knower and known. Contemporary debates in philosophy of mind grapple with the hard problem of consciousness, questioning whether qualia can be reduced to neural correlates or whether they represent irreducible aspects of reality. These metaphysical commitments have profound implications for ethical theory, particularly regarding moral responsibility and the nature of personal identity across time."
+    },
+    "solution_criteria": [
+      "Identifies abstract philosophical concepts as topics",
+      "Extracts topics in valid JSON array format",
+      "Includes major philosophical subdisciplines mentioned"
+    ],
+    "task_description": "\"\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a dense philosophy paper excerpt containing abstract concepts like metaphysics, epistemology, and ethical frameworks"
+  },
+  {
+    "prompt_inputs": {
+      "content": "The expansion of medieval trade networks fundamentally transformed European economic structures between the 11th and 13th centuries. The rise of merchant guilds in Italian city-states like Venice and Genoa established sophisticated credit systems and maritime insurance practices that facilitated long-distance commerce. These trading partnerships extended along the Silk Road, connecting European markets with Byzantine Constantinople and ultimately reaching Asian spice markets. Cultural exchange accompanied commercial activity, as Islamic mathematical concepts and Arabic numerals were transmitted westward through merchant communities, while European textile techniques spread eastward. The development of standardized weights, measures, and currency systems across different regions reflected the growing integration of previously isolated economic zones."
+    },
+    "solution_criteria": [
+      "Extracts topics as a JSON array of strings",
+      "Includes major themes from the medieval trade passage"
+    ],
+    "task_description": "\"\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with a historical research article about medieval trade routes, economic systems, and cultural exchange patterns"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Climate change mitigation strategies require understanding complex interactions between atmospheric carbon dynamics and socioeconomic systems. The terrestrial carbon cycle involves photosynthetic carbon fixation by vegetation, which sequesters approximately 120 gigatons of carbon annually, while soil organic matter stores nearly three times more carbon than the atmosphere. However, rising temperatures accelerate microbial decomposition rates, potentially transforming carbon sinks into sources. Policy frameworks like carbon pricing mechanisms and cap-and-trade systems aim to internalize environmental externalities, yet implementation faces challenges from economic competitiveness concerns and international coordination difficulties. Recent studies indicate that nature-based solutions, including reforestation and wetland restoration, could provide up to 37% of the emission reductions needed to limit warming to 2\u00b0C while simultaneously supporting biodiversity conservation goals."
+    },
+    "solution_criteria": [
+      "Extracts topics related to climate change and carbon cycles",
+      "Identifies policy-related topics",
+      "Returns topics as a JSON array of strings"
+    ],
+    "task_description": "\"\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\"\n    ",
+    "scenario": "Testing with an interdisciplinary environmental science passage discussing climate change, carbon cycles, and policy implications"
+  }
+]
